@@ -4,6 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock} from 'lucide-react'
 import tutor1 from '../../../../public/imagens/tutor1.png'
 import tutor2 from '../../../../public/imagens/tutor2.png'
+import tutor3 from '../../../../public/imagens/tutor3.jpg'
 import Image from 'next/image'
 
 
@@ -27,7 +28,7 @@ const testimonials = [
       content: "Meus gatos nunca gostaram de sair de casa, mas o atendimento nesse petshop fez toda a diferença. A equipe é muito paciente e cuidadosa, e o serviço de banho especializado para felinos foi maravilhoso! Agora sei onde confiar o cuidado deles.",
       author: "Camila fernandes",
       role: "Tutora da Mel e do Max",
-      image: tutor2,
+      image: tutor3,
     },
   ]
 
@@ -46,13 +47,20 @@ export default function Testimonials() {
       }
 
   return (
-    <section className='bg-[#ffd449] py-16'>
+    <section className='bg-[#efc435] py-16'>
        <div className='container mx-auto px-4'>
             <div>
-                <h2 className='text-4xl font-bold text-center mb-12 '>Depoimentos dos nossos clientes</h2>
+                <h2 
+                className='text-4xl font-bold text-center mb-12 text-white'
+                style={{textShadow: '1px 1px 2px rgb(0 0 0 / 0.4)'}}
+                data-aos="fade-left"
+                >
+                  Depoimentos dos nossos clientes
+                </h2>
             </div>
 
-            <div className="relative max-w-4xl mx-auto">
+                
+                <div className="relative max-w-4xl mx-auto" data-aos="fade-left" data-aos-delay="300">
                 <div className='overflow-hidden' ref={emblaRef}>
                     <div className="flex">
 
@@ -91,21 +99,21 @@ export default function Testimonials() {
                     </div>
                 </div>
 
-                <button
+                <span
                  onClick={scrolPrev}
                  className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'  
                 >
                     <ChevronLeft className='w-6 h-6 text-gray-600'
                     />
-                </button>
+                </span>
 
-                <button
+                <span
                  onClick={scrolNext}
                  className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'  
                 >
                     <ChevronRight className='w-6 h-6 text-gray-600'
                     />
-                </button>
+                </span>
 
             </div>
        </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import useEmblaCarousel from 'embla-carousel-react'
-import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock} from 'lucide-react'
+import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock, Home, Dog} from 'lucide-react'
 import { FaWhatsapp } from 'react-icons/fa'
 
 const services = [
@@ -37,6 +37,23 @@ const services = [
       icon: <Hotel />,
       linkText: 'Olá, vi no site sobre Hotel para pets e gostaria de mais informações.'
     },
+
+    {
+      title: "Adestramento",
+      description: "Treinamento personalizado para corrigir comportamentos indesejados e ensinar comandos básicos e avançados. Ideal para cães de todas as idades e raças.",
+      duration: "1h",
+      price: "$70",
+      icon: <Dog />,
+      linkText: 'Olá, vi no site sobre Adestramento e gostaria de mais informações.'
+    },
+    {
+      title: "Creche para pets",
+      description: "Espaço interativo para socialização e cuidados diários dos pets enquanto os tutores estão ocupados. Com atividades recreativas e supervisão profissional.",
+      duration: "8h",
+      price: "$90",
+      icon: <Home />,
+      linkText: 'Olá, vi no site sobre Creche para pets e gostaria de mais informações.'
+    }
   ]
 
 export default function Services() {
@@ -45,9 +62,6 @@ export default function Services() {
         loop: false,
         align: 'start',
         slidesToScroll: 1,
-        breakpoints: {
-            "(min-width: 768px)": {slidesToScroll: 3}
-        }
       })
 
       function scrolPrev(){
@@ -61,11 +75,11 @@ export default function Services() {
   return (
     <section className='bg-white py-16'>
        <div className='container mx-auto px-4'>
-            <div>
-                <h2 className='text-4xl font-bold mb-12 '>Serviços</h2>
+            <div data-aos="fade-up">
+                <h2 className='text-4xl font-bold mb-12 text-center '>Serviços</h2>
             </div>
 
-            <div className="relative">
+              <div className="relative" data-aos="fade-up">
                 <div className='overflow-hidden' ref={emblaRef}>
                     <div className="flex">
 
@@ -78,7 +92,10 @@ export default function Services() {
                                             <span className='text-3xl'>{item.icon}</span>
 
                                             <div>
-                                                <h3 className='text-xl font-bold my-1'>{item.title}</h3>
+                                                <h3 className='text-xl font-bold my-1 flex items-center justify-between'>
+                                                  <span>{item.title}</span> 
+                                                  <span>{item.price}</span>
+                                                </h3>
                                                 <p className='text-gray-400 text-sm select-none'>{item.description}</p>
                                             </div>
                                         </div>
@@ -92,7 +109,7 @@ export default function Services() {
                                         </div>
 
                                         <a 
-                                        href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
+                                        href={`https://wa.me/556799998800?text=${item.linkText}`}
                                         target="_blank"
                                         className='flex items-center gap-2 text-sm hover:bg-green-800 px-4 py-1 rounded-md duration-300'
                                         >
@@ -111,21 +128,21 @@ export default function Services() {
                     </div>
                 </div>
 
-                <button
+                <svg
                  onClick={scrolPrev}
                  className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'  
                 >
                     <ChevronLeft className='w-6 h-6 text-gray-600'
                     />
-                </button>
+                </svg>
 
-                <button
+                <svg
                  onClick={scrolNext}
                  className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'  
                 >
                     <ChevronRight className='w-6 h-6 text-gray-600'
                     />
-                </button>
+                </svg>
 
             </div>
        </div>

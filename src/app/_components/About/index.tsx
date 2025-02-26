@@ -40,7 +40,7 @@ export default function About() {
                     <h2 className="text-4xl font-bold">Sobre</h2>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, animi dolores, nostrum numquam ad odio quo blanditiis nisi maxime tempora quibusdam quis perferendis. Non, dolorem ipsam. Iste eum assumenda amet quibusdam vitae, cum aliquid temporibus ad suscipit quaerat, obcaecati iure, repellendus voluptatem. Consectetur quibusdam minus ut, necessitatibus voluptas aut?
+                        Desde 2006, nosso PetShop cuida do seu pet com amor e dedicação. Contamos com uma equipe experiente de mais de 10 veterinários, garantindo atendimento especializado. Aqui, a qualidade é prioridade, oferecendo produtos e serviços de excelência para o bem-estar e felicidade do seu melhor amigo.
                     </p>
 
                     <ul className="space-y-3">
@@ -64,7 +64,8 @@ export default function About() {
                         <a 
                         href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
                         target="_blank"
-                        className="bg-[#E84C3D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                        className="bg-primary text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md
+                                    hover:bg-primary-dark transition duration-300"
                         >
                             <FaWhatsapp className="text-xl text-white"/>
                             Contato via WhatsApp
@@ -72,7 +73,8 @@ export default function About() {
 
                         <a 
                         href="#"
-                        className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                        className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border-2 border-black
+                                    hover:bg-black/10 transition duration-300"
                         >
                             <FaMapMarkerAlt className="text-xl text-black"/>
                             Endereço da Loja

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className='bg-[#E84C3D] text-white overflow-hidden relative'>
+    <section className='bg-primary text-white overflow-hidden relative '>
 
         <div className="-z-10">
             <Image
@@ -39,18 +39,18 @@ export default function Hero() {
                         <a 
                         href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
                         target="_blank"
-                        className='bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2'
+                        className='bg-green-400 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 text-black
+                        hover:bg-green-800 hover:text-white !transition !duration-300'
                         data-aos="fade-up"
-                        data-aos-delay="500"
                         >
                             <FaWhatsapp className="text-xl "/>
                             Contato via Watsapp
                         </a>
                     </div>
 
-                    <div className='mt-8 '>
+                    <div className='mt-8 ' data-aos-delay="300" data-aos="fade-left">
                         <p className='text-sm mb-3'>
-                            <b className='bg-black text-white px-2 py-1 rounded-md'>5%</b> de desconto na primeira compra.
+                            <b className='bg-black text-white px-2 py-1 rounded-md'>10%</b> de desconto na primeira compra.
                         </p>
                     </div>
 
