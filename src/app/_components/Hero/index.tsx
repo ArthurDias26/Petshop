@@ -24,18 +24,24 @@ export default function Hero() {
         <div className="container mx-auto pt-16 pb-8 md:pb-0 px-8 relative">
             <article className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-6">
-                    <h1 className='text-3xl md:text-4xl lg:text-5xl leading-10 font-bold'>
+                    <h1
+                     className='text-3xl md:text-4xl lg:text-5xl leading-10 font-bold'
+                     data-aos="fade-down"
+                     >
                         Seu pet merece cuidado, carinho e atenção especial.
                     </h1>
 
-                    <p className='lg:text-lg'>
+                    <p className='lg:text-lg' data-aos="fade-rigth">
                         Oferecemos os melhores serviços para garantir o bem-estar e a felicidade do seu amigo de quatro patas.
                     </p>
 
                     <div>
                         <a 
-                        href="#"
+                        href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
+                        target="_blank"
                         className='bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2'
+                        data-aos="fade-up"
+                        data-aos-delay="500"
                         >
                             <FaWhatsapp className="text-xl "/>
                             Contato via Watsapp
