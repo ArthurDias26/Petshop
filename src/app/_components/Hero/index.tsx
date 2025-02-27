@@ -1,5 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
-import dogImage from '../../../../public/imagens/hero-dog.webp'
+import dogImage from '../../../../public/imagens/hero-dog.png'
 import bgDogImage from '../../../../public/imagens/bg-hero.png'
 import catImage from '../../../../public/imagens/cat-hero.png'
 import Image from "next/image";
