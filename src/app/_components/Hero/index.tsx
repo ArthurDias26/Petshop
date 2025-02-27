@@ -15,7 +15,7 @@ export default function Hero() {
             className="object-cover opacity-60 md:hidden"
             fill
             sizes="100vw"
-            priority={true}
+            priority
             />
 
             <div className="absolute inset-0 bg-black/50 md:hidden"></div>
@@ -40,8 +40,8 @@ export default function Hero() {
                         <a 
                         href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
                         target="_blank"
-                        className='bg-green-400 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 text-black
-                        hover:bg-green-800 hover:text-white !transition !duration-300'
+                        className='bg-[#0F843B] px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 text-white
+                        hover:bg-green-900 hover:text-white !transition !duration-300'
                         data-aos="fade-up"
                         >
                             <FaWhatsapp className="text-xl "/>
@@ -75,6 +75,7 @@ export default function Hero() {
                      className="object-contain md:translate-y-[48px] lg:translate-y-0"
                      fill
                      sizes="{max-width: 768px} 0vw, 50vw"
+                     priority
                      quality={100}
                     />
                 </div>
