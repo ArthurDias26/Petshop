@@ -6,7 +6,7 @@ import Footer from './_components/Footer'
 
 export default function Home() {
   return (
-    <main>
+    <main className='max-w-[100vw] overflow-hidden'>
       <Hero/>
       <About/>
       <Services/>

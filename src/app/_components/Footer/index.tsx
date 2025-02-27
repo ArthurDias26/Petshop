@@ -3,7 +3,7 @@ import royal from '../../../../public/imagens/royal.png'
 import primier from '../../../../public/imagens/primier.png'
 import whiskas from '../../../../public/imagens/whiskas.png'
 import natural from '../../../../public/imagens/natural.png'
-import catFooter from '../../../../public/imagens/cat-footer.webp'
+import catFooter from '../../../../public/imagens/cat-footer.png'
 import Image from 'next/image'
 
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";

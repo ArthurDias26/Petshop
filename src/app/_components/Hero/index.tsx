@@ -1,5 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 import dogImage from '../../../../public/imagens/hero-dog.webp'
+import bgDogImage from '../../../../public/imagens/bg-hero.png'
 import catImage from '../../../../public/imagens/cat-hero.png'
 import Image from "next/image";
 
@@ -7,14 +8,14 @@ export default function Hero() {
   return (
     <section className='bg-primary text-white overflow-hidden relative '>
 
-        <div className="-z-10">
+        <div className="">
             <Image
-            src={dogImage}
+            src={bgDogImage}
             alt="Foto de Cachorro"
             className="object-cover opacity-60 md:hidden"
             fill
             sizes="100vw"
-            priority
+            priority={true}
             />
 
             <div className="absolute inset-0 bg-black/50 md:hidden"></div>
@@ -67,11 +68,11 @@ export default function Hero() {
 
                 </div>
 
-                <div className="hidden md:block h-full relative">
+                <div className="hidden md:block h-full relative z-10">
                     <Image
                      src={dogImage}
                      alt="Foto de Cachorro"
-                     className="object-contain"
+                     className="object-contain md:translate-y-[48px] lg:translate-y-0"
                      fill
                      sizes="{max-width: 768px} 0vw, 50vw"
                      quality={100}
