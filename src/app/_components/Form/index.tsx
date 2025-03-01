@@ -114,11 +114,11 @@ const formSchema = z.object({
 
     
   return (
-    <section className="pt-12 pb-20 flex justify-around items-center bg-[#FDF6ec]">
-      <div className="w-[42%] min-w-[300px] border-2 border-black py-4 px-12 rounded-2xl bg-white" data-aos="fade-rigth" data-aos-delay="150">
+    <section className="pt-12 pb-20 flex flex-col lg:flex-row justify-around items-center bg-[#FDF6ec] relative">
+      <div className="w-[68%] md:w-[52%] lg:w-[38%] min-w-[300px] border-2 border-black py-4 px-12 rounded-2xl bg-white" data-aos="fade-rigth" data-aos-delay="150">
 
-        <h2 className="text-2xl font-bold text-center">Calculadora de Alimentação</h2>
-        <p className="text-sm text-center mb-6">
+        <h2 className="text-xl sm:text-2xl font-bold text-center">Calculadora de Alimentação</h2>
+        <p className="text-xs text-center mb-6 sm:text-sm">
           Você sabia que existe um cálculo correto da quantidade de alimento para seu Pet? Preencha a tabela e descubra!
           <br/>
           <strong>Seu pet é um:</strong>
@@ -136,7 +136,7 @@ const formSchema = z.object({
                     <RadioGroup
                       onValueChange={field.onChange}
                       defaultValue={field.value}
-                      className="flex justify-center items-center gap-10"
+                      className="flex justify-center items-center gap-4 sm:gap-10"
                     >
 
                       <FormItem className="flex items-center space-x-3 space-y-0">
@@ -251,7 +251,7 @@ const formSchema = z.object({
       <Image
         src={dogEating}
         alt="Foto de Cachorro"
-        className="object-contain w-1/3"
+        className="object-contain w-[30%] min-w-[150px]"
         data-aos="fade-left" 
         data-aos-delay="150"
       />

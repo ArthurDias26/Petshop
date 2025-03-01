@@ -64,7 +64,7 @@ export default function About() {
                         <a 
                         href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
                         target="_blank"
-                        className="bg-primary text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md
+                        className="bg-primary text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md text-center
                                     hover:bg-primary-dark transition duration-300"
                         >
                             <FaWhatsapp className="text-xl text-white"/>
@@ -74,7 +74,7 @@ export default function About() {
                         <a 
                         href="https://www.google.com/maps/place/s%C3%A3o+paulo+capital/data=!4m2!3m1!1s0x94ce448183a461d1:0x9ba94b08ff335bae?sa=X&ved=1t:155783&ictx=111"
                         target="_blank"
-                        className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border-2 border-black
+                        className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border-2 border-black text-center
                                     hover:bg-black/10 transition duration-300"
                         >
                             <FaMapMarkerAlt className="text-xl text-black"/>
