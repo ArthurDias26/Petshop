@@ -14,10 +14,9 @@ export default {
   				DEFAULT: '#AA2013',
   				dark: '#912a21'
   			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			}
+  			secondary: "#efc435",
+			bgLight: "#FDF6ec",
+			daerkGray: "#1e293b"
   		},
  
   	}

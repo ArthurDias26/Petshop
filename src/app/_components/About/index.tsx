@@ -6,7 +6,7 @@ import { FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function About() {
   return (
-    <section className='bg-[#FDF6ec] py-16'>
+    <section className='bg-bgLight py-16'>
         <div className='container px-4 mx-auto'>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
