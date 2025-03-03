@@ -115,7 +115,7 @@ const formSchema = z.object({
     
   return (
     <section className="bg-bgLight pt-6 pb-20">
-      <h2 className="text-4xl font-bold text-center mb-2">Calculadora de Alimentação</h2> 
+      <h2 className="text-4xl font-bold text-center mb-2" data-aos="fade-up" data-aos-delay="100">Calculadora de Alimentação</h2> 
       <p className="text-center text-sm mb-6 px-6">
         Você sabia que existe um cálculo correto da quantidade de alimento para seu Pet? 
         <br/>

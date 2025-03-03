@@ -54,12 +54,12 @@ export default function Footer() {
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5 mx-auto' data-aos="fade-up">
                     <div className='mx-auto'>
-                        <h3 className='text-2xl font-semibold mb-2'>Pet Shop</h3>
-                        <p className='mb-4'>Cuidando do seu melhor amigo com amor e dedicação.</p>
+                        <h3 className='text-2xl font-semibold text-center mb-2'>Pet Shop</h3>
+                        <p className='mb-4 text-center max-w-[60%] mx-auto'>Cuidando do seu melhor amigo com amor e dedicação.</p>
 
                         <a 
                         href=""
-                        className='bg-green-500 px-4 py-2 rounded-md'
+                        className='bg-green-500 px-4 py-2 rounded-md block w-fit mx-auto'
                         >
                             Contato via Whatsapp
                         </a>
