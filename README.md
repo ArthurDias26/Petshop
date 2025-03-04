@@ -6,7 +6,7 @@
 [CSS__BADGE]: https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff
 
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
-[PROJECT__URL]: fast-eat-arthurdias.vercel.app
+[PROJECT__URL]: https://petshop-arthurdias.vercel.app/
 
 <h1 align="center" style="font-weight: bold;">PETSHOP 💻</h1>
 
